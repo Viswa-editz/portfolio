@@ -3,109 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viswa Kumar | Portfolio</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: #1e88e5;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #1e88e5;
-      margin-bottom: 20px;
-    }
-    ul { margin-left: 20px; margin-top: 10px; }
-    li { margin-bottom: 8px; }
-
-    .project {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Viswa R - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.min.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
+  <div class="nav">
+    <button id="prevBtn">⬅ Prev</button>
+    <button id="nextBtn">Next ➡</button>
+  </div>
 
-  <header>
-    <h1>Viswa R.R</h1>
-    <p>Python Full-Stack Developer</p>
-    <p>Hi, I’m Viswa — a Python Full-Stack Developer who enjoys designing end-to-end solutions and building user-friendly interfaces.</p>
-  </header>
+  <!-- Slides -->
+  <div class="slides">
 
-  <section id="skills">
-    <h2>Core Skills</h2>
-    <ul>
-      <li>Python | Django | Flask</li>
-      <li>HTML5 | CSS3 | JavaScript | React</li>
-      <li>REST API design</li>
-      <li>MySQL / PostgreSQL</li>
-      <li>Git, Docker, CI/CD</li>
-      <li>Problem-solving & debugging</li>
-    </ul>
-  </section>
+    <!-- Slide 1: Home -->
+    <section class="slide active" id="home">
+      <div class="content">
+        <h1>👋 Hi, I'm <span>Viswa R R</span></h1>
+        <h2>Junior Python Full Stack Developer - Fresher</h2>
+        <p>Aspiring Python Full Stack developer with experience in GUI application & web development.</p>
+      </div>
+      <canvas id="bg3d"></canvas>
+    </section>
 
-  <section id="objective">
-    <h2>Career Objective</h2>
-    <p>To use my full-stack skills to create high-quality applications that improve user experience and team productivity.</p>
-  </section>
+    <!-- Slide 2: Education -->
+    <section class="slide" id="education">
+      <h1>🎓 Education</h1>
+      <p><b>St Mary’s Higher Secondary School</b><br>10th: 80% | 12th: 70%</p>
+      <p><b>Bachelor of Technology (B.Tech)</b><br>Dr. MGR Educational & Research Institute<br>CGPA: 7.31/10 (2022 - Present)</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>📝 MS WordPad – Text Editor (Python)</h3>
+    <!-- Slide 3: Certificates -->
+    <section class="slide" id="certificates">
+      <h1>📜 Certifications</h1>
       <ul>
-        <li>Developed a lightweight text-editor similar to WordPad.</li>
-        <li>Text formatting: <b>Bold</b>, <i>Italic</i>, Underline</li>
-        <li>Font customization (family, size, style)</li>
-        <li>Cut/Copy/Paste functionality</li>
-        <li>Save & Open files</li>
-        <li>GUI built with Tkinter (or similar)</li>
-        <li>Emphasis on usability and efficient document editing</li>
-        <li><strong>Tech Stack:</strong> Python, Tkinter, File I/O, OOP</li>
+        <li>✅ Red Hat System Administration (RH124)</li>
+        <li>✅ CSC Certification: Diploma in Computer Application (DCA)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>📱 Instagram Story – Web Feature</h3>
+    <!-- Slide 4: Skills -->
+    <section class="slide" id="skills">
+      <h1>🛠 Skills</h1>
       <ul>
-        <li>Created a responsive, Instagram-style “Story” feature for the web.</li>
-        <li>Smooth story transitions with animated progress bar</li>
-        <li>Interactive controls for navigation</li>
-        <li>Responsive design for desktop & mobile</li>
-        <li>Built using HTML, CSS, and JavaScript</li>
-        <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript</li>
+        <li><b>Languages:</b> Python, HTML, CSS, JavaScript</li>
+        <li><b>Frameworks:</b> Node.js, Tkinter</li>
+        <li><b>Tools:</b> Git, GitHub, VS Code</li>
+        <li><b>Languages:</b> English, Tamil</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    &copy; 2025 Viswa Kumar. All rights reserved.
-  </footer>
+    <!-- Slide 5: Projects -->
+    <section class="slide" id="projects">
+      <h1>💻 Projects</h1>
+      <div class="project">
+        <h2>MS WordPad (Python)</h2>
+        <p>Developed a text editor with features like text formatting, font customization, cut/copy/paste, save/open using Tkinter.</p>
+      </div>
+      <div class="project">
+        <h2>Instagram Story (Web)</h2>
+        <p>Web-based Instagram-style story feature with story transition, progress bar, and interactive UI using HTML, CSS, JS.</p>
+      </div>
+    </section>
 
+    <!-- Slide 6: Contact -->
+    <section class="slide" id="contact">
+      <h1>📩 Contact Me</h1>
+      <p>Email: <a href="mailto:viswkumar777@gmail.com" target="_blank" rel="noopener noreferrer">viswkumar777@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917604804446" target="_blank" rel="noopener noreferrer">+91 76048 04446</a></p>
+      <p><a href="https://linkedin.com/in/viswa-r" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
